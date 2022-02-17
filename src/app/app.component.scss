@@ -1,0 +1,86 @@
+.list {
+    width: 100%;
+    max-width: 100%;
+    border: solid 1px #ccc;
+    min-height: 60px;
+    display: block;
+    background: white;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.box {
+    padding: 20px 10px;
+    border-bottom: solid 1px #ccc;
+    color: rgba(0, 0, 0, 0.87);
+    box-sizing: border-box;
+    cursor: move;
+    background: white;
+    font-size: 14px;
+}
+
+.cdk-drag-preview {
+    box-sizing: border-box;
+    border-radius: 4px;
+    box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2), 0 8px 10px 1px rgba(0, 0, 0, 0.14),
+        0 3px 14px 2px rgba(0, 0, 0, 0.12);
+}
+
+.cdk-drag-placeholder {
+    opacity: 0;
+}
+
+.cdk-drag-animating {
+    transition: transform 250ms cubic-bezier(0, 0, 0.2, 1);
+}
+
+.box:last-child {
+    border: none;
+}
+
+.list.cdk-drop-list-dragging .box:not(.cdk-drag-placeholder) {
+    transition: transform 250ms cubic-bezier(0, 0, 0.2, 1);
+}
+
+.form {
+    padding-right: 15px;
+    ::ng-deep .p-dropdown {
+        width: 100%;
+    }
+    ::ng-deep .p-inputtext {
+        width: 100%;
+        &.mid-size {
+            width: 45%;
+        }
+    }
+    ::ng-deep .button-add.p-button {
+        width: 100%;
+    }
+    .title-color {
+        color: cornflowerblue;
+    }
+}
+
+.question-list {
+    .loop {
+        padding-left: 8px;
+    }
+    .code {
+        border: 1px solid black;
+        border-radius: 3px;
+        text-align: center;
+        align-items: center;
+    }
+    .title {
+        padding-left: 70px;
+    }
+    .last-icons {
+        padding-left: 120px;
+    }
+}
+
+a:link {
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
+}
